@@ -1,0 +1,22 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "repository": {
+    "url": "<%= username %>/<%= name %>",
+    "type": "git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "poi -dc",
+    "build": "poi -c",
+    "deploy": "npm run build && gh-pages -d dist",
+    "test": "echo 'no tests!' && npm run deploy"
+  },
+  "author": "<%= username %> <<%= email %>> (<%= website %>)",
+  "license": "MIT",
+  "devDependencies": {
+    "poi": "^8.0.0",
+    "gh-pages": "^0.12.0"
+  }
+}
