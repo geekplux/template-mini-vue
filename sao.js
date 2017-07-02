@@ -1,6 +1,12 @@
 const superb = require('superb')
+const camelcase = require('camelcase')
 
 module.exports = {
+  templateOptions: {
+    context: {
+      camelcase
+    }
+  },
   prompts: {
     name: {
       message: 'What is the name of the new project?',
